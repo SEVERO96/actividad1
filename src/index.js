@@ -5,7 +5,7 @@ botonSiete.addEventListener("click", () => {
   etiquetaAudioSiete.setAttribute("src", "./src/recording/0.1introduccionmariayelarbol.m4a");
   etiquetaAudioSiete.play();
   setTimeout(function () {
-    window.location.href = "../escUno.html";
+    window.location.href = "https://severo96.github.io/actividad1/escUno.html";
 		
   }, 14000);
 });

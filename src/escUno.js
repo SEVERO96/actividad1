@@ -26,7 +26,7 @@ function dragEnd() {
 		contador++;
 		if (contador == 4) {
 			setTimeout(function () {
-				window.location.href = "../escDos.html";
+				window.location.href = "https://severo96.github.io/actividad1/escDos.html";
 				
 			}, 3000);
 		}
@@ -82,7 +82,7 @@ function dragEndTwo() {
 		contador++;
 		if (contador == 4) {
 			setTimeout(function () {
-				window.location.href = "../escDos.html";
+				window.location.href = "https://severo96.github.io/actividad1/escDos.html";
 				
 			}, 3000);
 		}
@@ -134,7 +134,7 @@ function dragEndTrhee() {
 		contador++;
 		if (contador == 4) {
 			setTimeout(function () {
-				window.location.href = "../escDos.html";
+				window.location.href = "https://severo96.github.io/actividad1/escDos.html";
 				
 			}, 3000);
 		}
@@ -186,7 +186,7 @@ function dragEndFour() {
 		contador++;
 		if (contador == 4) {
 			setTimeout(function () {
-				window.location.href = "../escDos.html";
+				window.location.href = "https://severo96.github.io/actividad1/escDos.html";
 				
 			}, 3000);
 		}

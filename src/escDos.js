@@ -26,7 +26,7 @@ function dragEnd() {
 		contadosDos++;
 		if (contadosDos == 4) {
 			setTimeout(function () {
-				window.location.href = "../final.html";
+				window.location.href = "https://severo96.github.io/actividad1/final.html";
 				
 			}, 3000);
 		}
@@ -81,7 +81,7 @@ function dragEndTwo() {
 		contadosDos++;
 		if (contadosDos == 4) {
 			setTimeout(function () {
-				window.location.href = "../final.html";
+				window.location.href = "https://severo96.github.io/actividad1/final.html";
 				
 			}, 3000);
 		}
@@ -132,7 +132,7 @@ function dragEndTrhee() {
 		contadosDos++;
 		if (contadosDos == 4) {
 			setTimeout(function () {
-				window.location.href = "../final.html";
+				window.location.href = "https://severo96.github.io/actividad1/final.html";
 				
 			}, 3000);
 		}
@@ -183,7 +183,7 @@ function dragEndFour() {
 		contadosDos++;
 		if (contadosDos == 4) {
 			setTimeout(function () {
-				window.location.href = "../final.html";
+				window.location.href = "https://severo96.github.io/actividad1/final.html";
 				
 			}, 3000);
 		}
