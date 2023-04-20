@@ -212,4 +212,7 @@ function dragDropFour() {
     this.append(fillFour)
 }
 
-console.log(contador);
+let botonPause = document.querySelector(".Audio-1");
+  setTimeout(function () {
+		botonPause.pause();
+  }, 17000);

@@ -206,3 +206,8 @@ function dragDropFour() {
     this.className = 'emptyFour'
     this.append(fillFour)
 }
+let botonPause = document.querySelector(".Audio-1");
+  setTimeout(function () {
+		botonPause.pause();
+  }, 17000);
+
