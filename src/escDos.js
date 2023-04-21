@@ -20,16 +20,7 @@ function dragStart() {
 
 function dragEnd() {
     this.className = 'fillOne'
-		let etiquetaAudioDiez = document.createElement("audio");
-  etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
-  etiquetaAudioDiez.play();
-		contadosDos++;
-		if (contadosDos == 4) {
-			setTimeout(function () {
-				window.location.href = "https://severo96.github.io/actividad1/final.html";
-				
-			}, 3000);
-		}
+		
 }
 
 function dragOver(e) {
@@ -51,7 +42,16 @@ function dragLeave() {
 function dragDrop() {
     this.className = 'emptyOne'
     this.append(fill)
-		
+		let etiquetaAudioDiez = document.createElement("audio");
+  etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
+  etiquetaAudioDiez.play();
+		contadosDos++;
+		if (contadosDos == 4) {
+			setTimeout(function () {
+				window.location.href = "https://severo96.github.io/actividad1/final.html";
+				
+			}, 3000);
+		}
 }
 
 const fillTwo = document.querySelector('.fillTwo')
@@ -74,17 +74,6 @@ function dragStartTwo() {
 
 function dragEndTwo() {
     this.className = 'fillTwo'
-		this.className = 'fillOne'
-		let etiquetaAudioDiez = document.createElement("audio");
-  etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
-  etiquetaAudioDiez.play();
-		contadosDos++;
-		if (contadosDos == 4) {
-			setTimeout(function () {
-				window.location.href = "https://severo96.github.io/actividad1/final.html";
-				
-			}, 3000);
-		}
 }
 
 function dragOverTwo(e) {
@@ -103,6 +92,16 @@ function dragLeaveTwo() {
 function dragDropTwo() {
     this.className = 'emptyTwo'
     this.append(fillTwo)
+		let etiquetaAudioDiez = document.createElement("audio");
+  etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
+  etiquetaAudioDiez.play();
+		contadosDos++;
+		if (contadosDos == 4) {
+			setTimeout(function () {
+				window.location.href = "https://severo96.github.io/actividad1/final.html";
+				
+			}, 3000);
+		}
 }
 
 const fillTrhee = document.querySelector('.fillTrhee')
@@ -125,17 +124,6 @@ function dragStartTrhee() {
 
 function dragEndTrhee() {
     this.className = 'fillTrhee'
-		this.className = 'fillOne'
-		let etiquetaAudioDiez = document.createElement("audio");
-  etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
-  etiquetaAudioDiez.play();
-		contadosDos++;
-		if (contadosDos == 4) {
-			setTimeout(function () {
-				window.location.href = "https://severo96.github.io/actividad1/final.html";
-				
-			}, 3000);
-		}
 }
 
 function dragOverTrhee(e) {
@@ -154,6 +142,17 @@ function dragLeavetrhee() {
 function dragDropTrhee() {
     this.className = 'emptyTrhee'
     this.append(fillTrhee)
+		this.className = 'fillOne'
+		let etiquetaAudioDiez = document.createElement("audio");
+  etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
+  etiquetaAudioDiez.play();
+		contadosDos++;
+		if (contadosDos == 4) {
+			setTimeout(function () {
+				window.location.href = "https://severo96.github.io/actividad1/final.html";
+				
+			}, 3000);
+		}
 }
 
 const fillFour = document.querySelector('.fillFour')
@@ -176,17 +175,6 @@ function dragStartFour() {
 
 function dragEndFour() {
     this.className = 'fillFour'
-		this.className = 'fillOne'
-		let etiquetaAudioDiez = document.createElement("audio");
-  etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
-  etiquetaAudioDiez.play();
-		contadosDos++;
-		if (contadosDos == 4) {
-			setTimeout(function () {
-				window.location.href = "https://severo96.github.io/actividad1/final.html";
-				
-			}, 3000);
-		}
 }
 
 function dragOverFour(e) {
@@ -205,6 +193,16 @@ function dragLeaveFour() {
 function dragDropFour() {
     this.className = 'emptyFour'
     this.append(fillFour)
+		let etiquetaAudioDiez = document.createElement("audio");
+  etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
+  etiquetaAudioDiez.play();
+		contadosDos++;
+		if (contadosDos == 4) {
+			setTimeout(function () {
+				window.location.href = "https://severo96.github.io/actividad1/final.html";
+				
+			}, 3000);
+		}
 }
 let botonPauseDos = document.querySelector(".Audio-2");
   setTimeout(function () {

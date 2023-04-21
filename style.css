@@ -71,24 +71,37 @@ body {
 }
 
 .emptyOne {
-	border: solid 0.1rem rgb(61, 60, 60);
-	background: rgba(225, 82, 82, 0.6);
+	border: solid 0.3rem rgb(124, 6, 6);
+	background: rgba(121, 50, 50, 0.6);
+	height: 4rem;
+	width: 4rem;
+	margin: 5px;
 }
 
 .emptyTwo {
-	border: solid 0.1rem rgb(61, 60, 60);
+	border: solid 0.3rem rgb(158, 93, 13);
 	background: rgba(121, 50, 50, 0.6);
+	height: 4rem;
+	width: 4rem;
+	margin: 5px;
 }
 
 .emptyTrhee {
-	border: solid 0.1rem rgb(61, 60, 60);
+	border: solid 0.3rem rgba(13, 1, 18, 0.948);
 	background: rgba(30, 171, 131, 0.6);
+	height: 4rem;
+	width: 4rem;
+	margin: 5px;
 }
 
 .emptyFour {
-	border: solid 0.1rem rgb(61, 60, 60);
-	background: rgba(114, 216, 194, 0.6);
+	border: solid 0.3rem rgb(84, 3, 79);
+	background: rgba(30, 171, 131, 0.6);
+	height: 4rem;
+	width: 4rem;
+	margin: 5px;
 }
+
 
 .fill {
 	
