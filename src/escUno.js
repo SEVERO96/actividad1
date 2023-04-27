@@ -1,4 +1,5 @@
 let contador = 0;
+let contadorNo = 0;
 const fill = document.querySelector('.fillOne')
 const empties = document.querySelectorAll('.emptyOne')
 
@@ -15,13 +16,31 @@ for(const empty of empties) {
 function dragStart() {
     this.className += ' hold' 
     setTimeout(() => this.className = 'invisible', 0)
+		let emptyTwo = document.querySelector("#emptyTwoRed");
+		let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
+		let emptyFour = document.querySelector("#emptyFourGreen");
+		emptyTwo.style.pointerEvents = 'none';
+		emptyTrhee.style.pointerEvents = 'none';
+		emptyFour.style.pointerEvents = 'none';
 		
 }
 
 function dragEnd() {
     this.className = 'fillOne'
-		
-
+		if (contadorNo == 0) {
+			let etiquetaAudioDiez = document.createElement("audio");
+		etiquetaAudioDiez.setAttribute("src", "./src/recording/1.2oh-no.m4a");
+		etiquetaAudioDiez.play();
+		}else
+		{
+			contadorNo = 0;
+		}
+		let emptyTwo = document.querySelector("#emptyTwoRed");
+	let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
+	let emptyFour = document.querySelector("#emptyFourGreen");
+	emptyTwo.style.pointerEvents = 'fill';
+	emptyTrhee.style.pointerEvents = 'fill';
+	emptyFour.style.pointerEvents = 'fill';
 }
 
 function dragOver(e) {
@@ -44,15 +63,16 @@ function dragDrop() {
     this.className = 'emptyOne'
     this.append(fill)
 		let etiquetaAudioDiez = document.createElement("audio");
-		etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
-		etiquetaAudioDiez.play();
-			contador++;
-			if (contador == 4) {
-				setTimeout(function () {
-					window.location.href = "https://severo96.github.io/actividad1/escDos.html";
-					
-				}, 3000);
-			}
+  etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
+  etiquetaAudioDiez.play();
+		contador++;
+		contadorNo++;
+		if (contados == 4) {
+			setTimeout(function () {
+				window.location.href = "https://severo96.github.io/actividad1/final.html";
+				
+			}, 3000);
+		}
 }
 
 const fillTwo = document.querySelector('.fillTwo')
@@ -71,24 +91,46 @@ for(const emptyTwo of emptiesTwo) {
 function dragStartTwo() {
     this.className += ' hold' 
     setTimeout(() => this.className = 'invisible', 0)
-}
+		let emptyOne = document.querySelector("#emptyOneRed");
+		let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
+		let emptyFour = document.querySelector("#emptyFourGreen");
+		emptyOne.style.pointerEvents = 'none';
+		emptyTrhee.style.pointerEvents = 'none';
+		emptyFour.style.pointerEvents = 'none';
+	}
 
 function dragEndTwo() {
     this.className = 'fillTwo'
-		
+		if (contadorNo == 0) {
+			let etiquetaAudioDiez = document.createElement("audio");
+		etiquetaAudioDiez.setAttribute("src", "./src/recording/1.2oh-no.m4a");
+		etiquetaAudioDiez.play();
+		}else
+		{
+			contadorNo = 0;
+		}
+	let emptyOne = document.querySelector("#emptyOneRed");
+	let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
+	let emptyFour = document.querySelector("#emptyFourGreen");
+	emptyOne.style.pointerEvents = 'fill';
+	emptyTrhee.style.pointerEvents = 'fill';
+	emptyFour.style.pointerEvents = 'fill';
 }
 
 function dragOverTwo(e) {
     e.preventDefault()
+	
 }
 
 function dragEnterTwo(e) {
     e.preventDefault()
     this.className += ' hovered'
+		
 }
 
 function dragLeaveTwo() {
     this.className = 'emptyTwo'
+		
 }
 
 function dragDropTwo() {
@@ -98,6 +140,7 @@ function dragDropTwo() {
   etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
   etiquetaAudioDiez.play();
 		contador++;
+		contadorNo++;
 		if (contador == 4) {
 			setTimeout(function () {
 				window.location.href = "https://severo96.github.io/actividad1/escDos.html";
@@ -106,7 +149,7 @@ function dragDropTwo() {
 		}
 
 }
-
+console.log(contadorNo)
 const fillTrhee = document.querySelector('.fillTrhee')
 const emptiesTrhee = document.querySelectorAll('.emptyTrhee')
 
@@ -123,10 +166,32 @@ for(const emptyTrhee of emptiesTrhee) {
 function dragStartTrhee() {
     this.className += ' hold' 
     setTimeout(() => this.className = 'invisible', 0)
+		let emptyOne = document.querySelector("#emptyOneRed")
+		let emptyTwo = document.querySelector("#emptyTwoRed");
+		  
+		let emptyFour = document.querySelector("#emptyFourGreen");
+		emptyOne.style.pointerEvents = "none";
+		emptyTwo.style.pointerEvents = 'none';
+		
+		emptyFour.style.pointerEvents = 'none';
 }
 
 function dragEndTrhee() {
     this.className = 'fillTrhee'
+		if (contadorNo == 0) {
+			let etiquetaAudioDiez = document.createElement("audio");
+		etiquetaAudioDiez.setAttribute("src", "./src/recording/1.2oh-no.m4a");
+		etiquetaAudioDiez.play();
+		}else
+		{
+			contadorNo = 0;
+		}
+		let emptyTwo = document.querySelector("#emptyTwoRed");
+	let emptyOne = document.querySelector("#emptyOneRed");
+	let emptyFour = document.querySelector("#emptyFourGreen");
+	emptyTwo.style.pointerEvents = 'fill';
+	emptyOne.style.pointerEvents = 'fill';
+	emptyFour.style.pointerEvents = 'fill';
 }
 
 function dragOverTrhee(e) {
@@ -149,6 +214,7 @@ function dragDropTrhee() {
   etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
   etiquetaAudioDiez.play();
 		contador++;
+		contadorNo++;
 		if (contador == 4) {
 			setTimeout(function () {
 				window.location.href = "https://severo96.github.io/actividad1/escDos.html";
@@ -173,10 +239,32 @@ for(const emptyFour of emptiesFour) {
 function dragStartFour() {
     this.className += ' hold' 
     setTimeout(() => this.className = 'invisible', 0)
+		let emptyOne = document.querySelector("#emptyOneRed")
+		let emptyTwo = document.querySelector("#emptyTwoRed");
+		let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
+		
+		emptyOne.style.pointerEvents = "none";
+		emptyTwo.style.pointerEvents = 'none';
+		emptyTrhee.style.pointerEvents = 'none';
+		
 }
 
 function dragEndFour() {
     this.className = 'fillFour'
+		if (contadorNo == 0) {
+			let etiquetaAudioDiez = document.createElement("audio");
+		etiquetaAudioDiez.setAttribute("src", "./src/recording/1.2oh-no.m4a");
+		etiquetaAudioDiez.play();
+		}else
+		{
+			contadorNo = 0;
+		}
+		let emptyTwo = document.querySelector("#emptyTwoRed");
+	let emptyOne = document.querySelector("#emptyOneRed");
+	let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
+	emptyTwo.style.pointerEvents = 'fill';
+	emptyOne.style.pointerEvents = 'fill';
+	emptyTrhee.style.pointerEvents = 'fill';
 }
 
 function dragOverFour(e) {
@@ -199,6 +287,7 @@ function dragDropFour() {
 		etiquetaAudioDiez.setAttribute("src", "./src/recording/1.1muybien.m4a");
 		etiquetaAudioDiez.play();
 			contador++;
+			contadorNo++;
 			if (contador == 4) {
 				setTimeout(function () {
 					window.location.href = "https://severo96.github.io/actividad1/escDos.html";
@@ -208,6 +297,7 @@ function dragDropFour() {
 }
 
 let botonPause = document.querySelector(".Audio-1");
+botonPause.play();
   setTimeout(function () {
 		botonPause.pause();
-  }, 17000);
+  }, 18000);
