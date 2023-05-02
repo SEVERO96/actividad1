@@ -1,3 +1,4 @@
+
 let contador = 0;
 let contadorNo = 0;
 const fill = document.querySelector('.fillOne')
@@ -301,3 +302,9 @@ botonPause.play();
   setTimeout(function () {
 		botonPause.pause();
   }, 18000);
+
+	let botonPauseDos = document.querySelector(".Audio-2");
+  setTimeout(function () {
+		botonPauseDos.pause();
+  }, 17000);
+
