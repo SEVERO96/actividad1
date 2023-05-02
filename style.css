@@ -23,6 +23,27 @@ body {
 	z-index: -100;
 }
 
+@media(max-width: 850px) and (orientation: landscape){
+	#container-id{
+		padding-top: 5rem;
+	}
+	#emptyOneRed, #emptyTwoRed, #emptyTrheeGreen, #emptyFourGreen {
+	height: 2.5rem;
+	width: 2.5rem;
+	margin: 5px;
+	}
+	#apple-container-id{
+		padding: 0rem 10rem;
+	}
+	#img1, #img2, #img3, #img4{
+		height: 2rem;
+		width: 2rem;
+		padding: .2rem .2rem;
+	}
+	#apple-red-container-id{
+		padding: .8rem 0rem;
+	}
+}
 @media(max-width: 620px) and (orientation: portrait){
 	#landscape {
 		display: flex;
@@ -43,15 +64,7 @@ body {
 		height: 10rem;
 	}
 }
-@media(max-width: 850px) and (orientation: landscape){
-	.emptyOne {
-		border: solid 0.3rem rgb(0, 0, 0);
-		background: rgba(19, 146, 29, 0.6);
-		height: 4rem;
-		width: 4rem;
-		margin: 5px;
-	}
-}
+
 .container {
 	flex-direction: column;
 	padding-top: 8rem;
@@ -115,9 +128,7 @@ body {
 }
 
 
-.fill {
-	
-}
+
 
 .hold {
 	border: solid 5px #ccc;

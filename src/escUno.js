@@ -303,8 +303,23 @@ botonPause.play();
 		botonPause.pause();
   }, 18000);
 
-	let botonPauseDos = document.querySelector(".Audio-2");
-  setTimeout(function () {
-		botonPauseDos.pause();
-  }, 17000);
+	setTimeout(function () {
+		let emptyTwo = document.querySelector("#emptyTwoRed");
+	let emptyOne = document.querySelector("#emptyOneRed");
+	let emptyTrhee = document.querySelector("#emptyTrheeGreen");
+	let emptyFour = document.querySelector("#emptyFourGreen");
+	emptyFour.style.pointerEvents = 'fill';  
+	emptyTwo.style.pointerEvents = 'fill';
+	emptyOne.style.pointerEvents = 'fill';
+	emptyTrhee.style.pointerEvents = 'fill';
+  }, 18000);
+
+	let emptyOne = document.querySelector("#emptyOneRed")
+	let emptyTwo = document.querySelector("#emptyTwoRed");
+	let emptyTrhee = document.querySelector("#emptyTrheeGreen"); 
+	let emptyFour = document.querySelector("#emptyFourGreen");
+		emptyFour.style.pointerEvents = 'none'; 
+	emptyOne.style.pointerEvents = "none";
+	emptyTwo.style.pointerEvents = 'none';
+	emptyTrhee.style.pointerEvents = 'none';
 
