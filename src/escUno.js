@@ -3,6 +3,14 @@ let contador = 0;
 let contadorNo = 0;
 const fill = document.querySelector('.fillOne')
 const empties = document.querySelectorAll('.emptyOne')
+let emptyTwo = document.querySelector("#emptyTwoRed");
+let emptyOne = document.querySelector("#emptyOneRed");
+let emptyTrhee = document.querySelector("#emptyTrheeGreen");
+let emptyFour = document.querySelector("#emptyFourGreen");
+let emptyTwoId = document.querySelector("#emptyTwoRedId");
+let emptyOneId = document.querySelector("#emptyOneRedId");
+let emptyTrheeId = document.querySelector("#emptyTrheeGreenId");
+let emptyFourId = document.querySelector("#emptyFourGreenId");
 
 fill.addEventListener('dragstart', dragStart)
 fill.addEventListener('dragend', dragEnd)
@@ -17,13 +25,12 @@ for(const empty of empties) {
 function dragStart() {
     this.className += ' hold' 
     setTimeout(() => this.className = 'invisible', 0)
-		let emptyTwo = document.querySelector("#emptyTwoRed");
-		let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
-		let emptyFour = document.querySelector("#emptyFourGreen");
 		emptyTwo.style.pointerEvents = 'none';
 		emptyTrhee.style.pointerEvents = 'none';
 		emptyFour.style.pointerEvents = 'none';
-		
+		emptyTwoId.style.pointerEvents = 'none';
+		emptyTrheeId.style.pointerEvents = 'none';
+		emptyFourId.style.pointerEvents = 'none';
 }
 
 function dragEnd() {
@@ -36,12 +43,12 @@ function dragEnd() {
 		{
 			contadorNo = 0;
 		}
-		let emptyTwo = document.querySelector("#emptyTwoRed");
-	let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
-	let emptyFour = document.querySelector("#emptyFourGreen");
 	emptyTwo.style.pointerEvents = 'fill';
 	emptyTrhee.style.pointerEvents = 'fill';
 	emptyFour.style.pointerEvents = 'fill';
+	emptyTwoId.style.pointerEvents = 'fill';
+	emptyTrheeId.style.pointerEvents = 'fill';
+	emptyFourId.style.pointerEvents = 'fill';
 }
 
 function dragOver(e) {
@@ -92,12 +99,12 @@ for(const emptyTwo of emptiesTwo) {
 function dragStartTwo() {
     this.className += ' hold' 
     setTimeout(() => this.className = 'invisible', 0)
-		let emptyOne = document.querySelector("#emptyOneRed");
-		let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
-		let emptyFour = document.querySelector("#emptyFourGreen");
 		emptyOne.style.pointerEvents = 'none';
 		emptyTrhee.style.pointerEvents = 'none';
 		emptyFour.style.pointerEvents = 'none';
+		emptyOneId.style.pointerEvents = 'none';
+		emptyTrheeId.style.pointerEvents = 'none';
+		emptyFourId.style.pointerEvents = 'none';
 	}
 
 function dragEndTwo() {
@@ -110,12 +117,12 @@ function dragEndTwo() {
 		{
 			contadorNo = 0;
 		}
-	let emptyOne = document.querySelector("#emptyOneRed");
-	let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
-	let emptyFour = document.querySelector("#emptyFourGreen");
 	emptyOne.style.pointerEvents = 'fill';
 	emptyTrhee.style.pointerEvents = 'fill';
 	emptyFour.style.pointerEvents = 'fill';
+	emptyOneId.style.pointerEvents = 'fill';
+	emptyTrheeId.style.pointerEvents = 'fill';
+	emptyFourId.style.pointerEvents = 'fill';
 }
 
 function dragOverTwo(e) {
@@ -167,14 +174,12 @@ for(const emptyTrhee of emptiesTrhee) {
 function dragStartTrhee() {
     this.className += ' hold' 
     setTimeout(() => this.className = 'invisible', 0)
-		let emptyOne = document.querySelector("#emptyOneRed")
-		let emptyTwo = document.querySelector("#emptyTwoRed");
-		  
-		let emptyFour = document.querySelector("#emptyFourGreen");
 		emptyOne.style.pointerEvents = "none";
 		emptyTwo.style.pointerEvents = 'none';
-		
 		emptyFour.style.pointerEvents = 'none';
+		emptyOneId.style.pointerEvents = "none";
+		emptyTwoId.style.pointerEvents = 'none';
+		emptyFourId.style.pointerEvents = 'none';
 }
 
 function dragEndTrhee() {
@@ -187,12 +192,13 @@ function dragEndTrhee() {
 		{
 			contadorNo = 0;
 		}
-		let emptyTwo = document.querySelector("#emptyTwoRed");
-	let emptyOne = document.querySelector("#emptyOneRed");
-	let emptyFour = document.querySelector("#emptyFourGreen");
+		
 	emptyTwo.style.pointerEvents = 'fill';
 	emptyOne.style.pointerEvents = 'fill';
 	emptyFour.style.pointerEvents = 'fill';
+	emptyTwoId.style.pointerEvents = 'fill';
+	emptyOneId.style.pointerEvents = 'fill';
+	emptyFourId.style.pointerEvents = 'fill';
 }
 
 function dragOverTrhee(e) {
@@ -240,14 +246,13 @@ for(const emptyFour of emptiesFour) {
 function dragStartFour() {
     this.className += ' hold' 
     setTimeout(() => this.className = 'invisible', 0)
-		let emptyOne = document.querySelector("#emptyOneRed")
-		let emptyTwo = document.querySelector("#emptyTwoRed");
-		let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
 		
 		emptyOne.style.pointerEvents = "none";
 		emptyTwo.style.pointerEvents = 'none';
 		emptyTrhee.style.pointerEvents = 'none';
-		
+		emptyOneId.style.pointerEvents = "none";
+		emptyTwoId.style.pointerEvents = 'none';
+		emptyTrheeId.style.pointerEvents = 'none';
 }
 
 function dragEndFour() {
@@ -259,12 +264,12 @@ function dragEndFour() {
 		}else
 		{
 			contadorNo = 0;
-		}
-		let emptyTwo = document.querySelector("#emptyTwoRed");
-	let emptyOne = document.querySelector("#emptyOneRed");
-	let emptyTrhee = document.querySelector("#emptyTrheeGreen");  
+		} 
 	emptyTwo.style.pointerEvents = 'fill';
 	emptyOne.style.pointerEvents = 'fill';
+	emptyTrhee.style.pointerEvents = 'fill';
+	emptyTwoId.style.pointerEvents = 'fill';
+	emptyOneId.style.pointerEvents = 'fill';
 	emptyTrhee.style.pointerEvents = 'fill';
 }
 
@@ -304,22 +309,15 @@ botonPause.play();
   }, 18000);
 
 	setTimeout(function () {
-		let emptyTwo = document.querySelector("#emptyTwoRed");
-	let emptyOne = document.querySelector("#emptyOneRed");
-	let emptyTrhee = document.querySelector("#emptyTrheeGreen");
-	let emptyFour = document.querySelector("#emptyFourGreen");
-	emptyFour.style.pointerEvents = 'fill';  
-	emptyTwo.style.pointerEvents = 'fill';
-	emptyOne.style.pointerEvents = 'fill';
-	emptyTrhee.style.pointerEvents = 'fill';
+		
+	emptyFourId.style.pointerEvents = 'fill';  
+	emptyTwoId.style.pointerEvents = 'fill';
+	emptyOneId.style.pointerEvents = 'fill';
+	emptyTrheeId.style.pointerEvents = 'fill';
   }, 18000);
 
-	let emptyOne = document.querySelector("#emptyOneRed")
-	let emptyTwo = document.querySelector("#emptyTwoRed");
-	let emptyTrhee = document.querySelector("#emptyTrheeGreen"); 
-	let emptyFour = document.querySelector("#emptyFourGreen");
-		emptyFour.style.pointerEvents = 'none'; 
-	emptyOne.style.pointerEvents = "none";
-	emptyTwo.style.pointerEvents = 'none';
-	emptyTrhee.style.pointerEvents = 'none';
+	emptyFourId.style.pointerEvents = 'none'; 
+	emptyOneId.style.pointerEvents = "none";
+	emptyTwoId.style.pointerEvents = 'none';
+	emptyTrheeId.style.pointerEvents = 'none';
 
