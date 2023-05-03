@@ -247,10 +247,10 @@ function dragStartFour() {
     setTimeout(() => this.className = 'invisible', 0)
 		emptyOne.style.pointerEvents = "none";
 		emptyTwo.style.pointerEvents = 'none';
-		emptyFour.style.pointerEvents = 'none';
+		emptyTrhee.style.pointerEvents = 'none';
 		emptyOneId.style.pointerEvents = "none";
 		emptyTwoId.style.pointerEvents = 'none';
-		emptyFourId.style.pointerEvents = 'none';
+		emptyTrheeId.style.pointerEvents = 'none';
 }
 
 function dragEndFour() {
