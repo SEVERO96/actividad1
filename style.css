@@ -27,7 +27,7 @@ body {
 	#container-id{
 		padding-top: 5rem;
 	}
-	#emptyOneRed, #emptyTwoRed, #emptyTrheeGreen, #emptyFourGreen {
+	#emptyOneRed, #emptyTwoRed, #emptyTrheeGreen, #emptyFourGreen,#emptyOneRedId, #emptyTwoRedId, #emptyTrheeGreenId, #emptyFourGreenId {
 	height: 2.5rem;
 	width: 2.5rem;
 	margin: 5px;
@@ -41,7 +41,7 @@ body {
 		padding: .2rem .2rem;
 	}
 	#apple-red-container-id{
-		padding: .8rem 0rem;
+		padding: 0rem 0rem;
 	}
 	#wrap-id{
 		height: 100%;
