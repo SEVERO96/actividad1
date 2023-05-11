@@ -191,12 +191,12 @@ function dragEndTrhee() {
 		{
 			contadorNoDos = 0;
 		}
-		emptyOne.style.pointerEvents = "none";
-		emptyTwo.style.pointerEvents = 'none';
-		emptyFour.style.pointerEvents = 'none';
-		emptyOneId.style.pointerEvents = "none";
-		emptyTwoId.style.pointerEvents = 'none';
-		emptyFourId.style.pointerEvents = 'none';
+		emptyOne.style.pointerEvents = "fill";
+		emptyTwo.style.pointerEvents = 'fill';
+		emptyFour.style.pointerEvents = 'fill';
+		emptyOneId.style.pointerEvents = "fill";
+		emptyTwoId.style.pointerEvents = 'fill';
+		emptyFourId.style.pointerEvents = 'fill';
 }
 
 function dragOverTrhee(e) {
